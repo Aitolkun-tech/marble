@@ -18,3 +18,20 @@ body {
 .header {
     background: #E6E6E6;
 }
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+    margin-right: 125px;
+}
+.header__nav {
+    max-width: 720px;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
