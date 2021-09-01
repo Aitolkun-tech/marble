@@ -16,9 +16,10 @@ body {
     padding: 0 15px;
 }
 .header {
-    background: #E6E6E6;
+    background: #E6E6E6;   
 }
 .header__inner {
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,5 +34,38 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    
+    list-style: none;    
+}
+.menu__item {
+    margin-left: 30px;
+    color:#4E4E4E;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-stretch: condensed;
+    font-size: 16px;
+}
+.menu__link--active {
+    color: #1ABB9C;
+    ;
+}
+.banner {
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    padding-top: 180px;
+}
+.banner__title {
+    color: #FFFFFF;  
+    margin: 0; 
+}
+.index__banner{
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner__subtitle {
+    margin: 0;
 }
