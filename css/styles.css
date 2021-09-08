@@ -49,23 +49,24 @@ body {
     ;
 }
 .banner {
-    background-image: url(/img/bg.jpg);
+    background-image: url(../img/hero-bg\ 1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 600px;
     padding-top: 180px;
 }
-.banner__title {
-    color: #FFFFFF;  
-    margin: 0; 
-}
-.index__banner{
-    margin-bottom: 72px;
+.index__banner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.banner__title {
+    color: #FFFFFF;  
+    margin-bottom: 40px; 
+}
+
 .banner__subtitle {
-    margin: 0;
+    margin-bottom: 50px;
 }
