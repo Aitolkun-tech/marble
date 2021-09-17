@@ -2,9 +2,11 @@ html {
     box-sizing: border-box;
 }
 *,
-* ::before,
-* ::after {
-    box-sizing: inherit;
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
     padding: 0;
@@ -13,7 +15,7 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
 }
 .header {
     background: #E6E6E6;   
@@ -131,42 +133,78 @@ body {
    
 }
 .services__img{margin-bottom:30px}
-.works{
-    min-height: 562px;
+
+.works {
     padding: 50px 0 63px 0;
-}
-.works__list {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    list-style:none
-}
-.works__item{
-    height: 392px;
-    width: 350px;
-}
-.works__title{
-    text-transform: uppercase;
+  }
+.works__title {
+    padding-bottom: 22px;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
-    margin-bottom: 22px;
-    color: #4E4E4E;
     font-size: 18px;
     line-height: 35px;
-}
-.works__item-title{
+    text-transform: uppercase;
     color: #4E4E4E;
-    font-size: 18px;
+    padding-left: 40px;
+  }
+.works__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+  }
+.works__img {
+    padding-bottom: 25px;
+  }
+.works__item {
+    width: 350px;
+  }
+.works__item-title {
     font-family: "Roboto Slab", sans-serif;
-    margin-top: 26px;
-}
-.works__item-subtitle{
-    font-family: Roboto Slab;
-    color: #ADADAD;
-}
-.works__item-txt{
-    line-height: 30px;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #4E4E4E;
+    padding-bottom: 5px;
+  }
+.works__item-subtitle {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #adadad;
+    padding-bottom: 13px;
+  }
+.works__item-description {
     font-family: "Roboto", sans-serif;
-    color: #5C5C5C;
-}
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #5c5c5c;
+  }
+.testimonials{
+    text-align: center;  
+    background-color: #efefef;
+   
+  }
+  .testimonials__txt{
+    position: relative;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #a1a1a1;
+    padding: 133px 0 91px;
+    width: 875px;
+    margin: 0 auto;
+  }
+.testimonials__txt::before{
+    content: "“";
+    position: absolute;
+    color: #DCDCDC;
+    font-size: 5.2em;
+    top: 75px;
+    right: 420px;
+   
+
+}  
